@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab 8.1 - Specially Crafted Tea (Lightbox &amp; Google Map)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Over+the+Rainbow&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0"></script>
+<button class="menu-btn" aria-label="Menu">&#9776;</button>
+
+<!-- SECTION 1: HERO -->
+<header class="hero">
+  <p class="hero__tag">Over one hundred flavors of tea</p>
+  <h1 class="hero__title">Specially Crafted Tea</h1>
+  <a href="#about" class="btn hero__btn">Explore</a>
+</header>
+
+<!-- SLIDESHOW -->
+<section class="slideshow" aria-label="Slideshow các loại trà">
+  <div class="slides">
+    <figure class="slide is-active"><a href="images/slide1.svg" class="glightbox" data-gallery="tea" data-title="Trà xanh thanh mát"><img src="images/slide1.svg" alt="Green tea"></a><figcaption>Trà xanh thanh mát</figcaption></figure>
+    <figure class="slide"><a href="images/slide2.svg" class="glightbox" data-gallery="tea" data-title="Hồng trà đậm vị"><img src="images/slide2.svg" alt="Black tea"></a><figcaption>Hồng trà đậm vị</figcaption></figure>
+    <figure class="slide"><a href="images/slide3.svg" class="glightbox" data-gallery="tea" data-title="Trà nhài thơm dịu"><img src="images/slide3.svg" alt="Jasmine tea"></a><figcaption>Trà nhài thơm dịu</figcaption></figure>
+    <button class="slide-nav prev" aria-label="Ảnh trước">&#10094;</button>
+    <button class="slide-nav next" aria-label="Ảnh sau">&#10095;</button>
+  </div>
+  <div class="dots"></div>
+</section>
+
+<!-- SECTION 2: 4 FEATURES (CSS Grid 4 cột) -->
+<section class="features">
+  <article class="feature">
+    <h3>Made with love</h3>
+    <p>Our tea is made with love, from the collection of the leaves to the brewing.</p>
+  </article>
+  <article class="feature">
+    <h3>Relaxation</h3>
+    <p>Set aside anxiety and relax after a hard day with a cup of hot tea in your hands.</p>
+  </article>
+  <article class="feature">
+    <h3>Energy</h3>
+    <p>Our tea will energize you with vitamins and invigorate the rest of the day.</p>
+  </article>
+  <article class="feature">
+    <h3>Family recipe</h3>
+    <p>All our recipes are passed down from generation to generation for a long time.</p>
+  </article>
+</section>
+
+<!-- SECTION 3: ABOUT (CSS Grid 2 cột) -->
+<section class="about" id="about">
+  <div class="about__media">
+    <a href="images/about.svg" class="glightbox" data-gallery="tea" data-title="Tea Station"><img src="images/about.svg" alt="Bộ ấm trà và tách trà đen"></a>
+  </div>
+  <div class="about__text">
+    <h2><span>About Our</span>Tea Station</h2>
+    <p>Once upon a time we only had a couple of teapots and enjoyed tea only with our family. Over time, we were able to afford to buy a small tea plantation</p>
+    <p>Now we have a whole teahouse and we delight many people with delicious and hot tea. We serve black long tea, relaxing green and jasmine tea, tea with spices and many others.</p>
+    <a href="#" class="btn">Learn more</a>
+  </div>
+</section>
+<!-- VIDEO + POST (Grid 2 cột) -->
+<section class="media">
+  <div class="media__item">
+    <h2>Video</h2>
+    <div class="video"><iframe src="https://www.youtube.com/embed/0tvRKGQPo64" title="Video về trà" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  </div>
+  <div class="media__item">
+    <h2>Post</h2>
+    <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="500" data-show-text="true"></div>
+  </div>
+</section>
+
+<!-- LIKE + SHARE + COMMENT -->
+<section class="social">
+  <h2>Chia sẻ &amp; bình luận</h2>
+  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+  <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+</section>
+
+<!-- GOOGLE MAP (Leaflet + OpenStreetMap, giống ảnh đề) -->
+<section class="map-section">
+  <div id="map" role="region" aria-label="Bản đồ cửa hàng"></div>
+</section>
+
+<footer class="footer">
+  <div class="footer__social">
+    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4v-7h2.5l.5-3H15V9c0-.9.4-1.5 1.600-1.500H18V4.800C17.600 4.700 16.700 4.600 15.800 4.600 13.600 4.600 12 5.900 12 8.400V11H9.500v3H12v7H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg></a>
+    <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm11.500 6.300c.4-.3.800-.7 1-1.200-.4.200-.9.400-1.400.4.500-.3.900-.8 1.100-1.400-.5.300-1 .5-1.600.6a2.500 2.500 0 0 0-4.300 2.300A7 7 0 0 1 6.200 7.400a2.500 2.500 0 0 0 .8 3.300c-.4 0-.8-.1-1.100-.3 0 1.200.9 2.200 2 2.400-.4.100-.8.100-1.100 0 .3 1 1.200 1.700 2.300 1.700A5 5 0 0 1 6 15.600 7 7 0 0 0 17.200 9.600z"/></svg></a>
+    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm5 2.500a4.500 4.500 0 1 1 0 9 4.500 4.500 0 0 1 0-9zm0 2a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5zM17 6.500a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+  </div>
+  <p>&copy; 2026 <a href="#">TEA STATION</a>. Designed for <a href="#">LAB 8.1</a>. Made for learning purposes only.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+<script src="js/slideshow.js"></script>
+<script src="js/widgets.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tea Station — trà ngon, dịch vụ tận tâm và không gian thư giãn.">
+  <title>Tea Station | Lab 8.2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Over+the+Rainbow&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <a class="brand" href="#home" aria-label="Tea Station — trang chủ">☕ <span>Tea Station</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Mở menu">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Trang chủ</a></li><li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#products">Sản phẩm</a></li><li><a href="#services">Dịch vụ</a></li><li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <p class="script">Over one hundred flavors of tea</p>
+      <h1>Specially Crafted Tea</h1>
+      <p class="hero-copy">Một tách trà ngon, một khoảng lặng dịu dàng cho ngày của bạn.</p>
+      <a class="btn" href="#products">Khám phá ngay</a>
+    </div>
+    <a class="scroll-cue" href="#features" aria-label="Cuộn xuống">⌄</a>
+  </header>
+
+  <main>
+    <section class="features" id="features" aria-label="Điều làm nên Tea Station">
+      <article class="feature"><span class="feature-icon">♡</span><h2>Made with love</h2><p>Chọn lọc từng lá trà và chăm chút trong mỗi lần pha.</p></article>
+      <article class="feature"><span class="feature-icon">☼</span><h2>Relaxation</h2><p>Thư giãn sau ngày dài cùng một tách trà ấm.</p></article>
+      <article class="feature"><span class="feature-icon">✦</span><h2>Energy</h2><p>Hương vị tươi mới tiếp thêm năng lượng cho bạn.</p></article>
+      <article class="feature"><span class="feature-icon">⌂</span><h2>Family recipe</h2><p>Công thức gia đình được gìn giữ qua nhiều thế hệ.</p></article>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <a class="about-photo glightbox" href="images/about.svg" data-gallery="tea" data-title="Tea Station — tuyển chọn trà">
+        <img src="images/about.svg" alt="Bộ ấm trà và tách trà trong không gian ấm áp" loading="lazy">
+      </a>
+      <div class="about-copy"><p class="script">About our</p><h2>Tea Station</h2>
+        <p>Từ một ấm trà nhỏ bên gia đình, Tea Station lớn lên cùng tình yêu dành cho những hương vị tự nhiên.</p>
+        <p>Chúng tôi tuyển chọn trà đen, trà xanh, trà hoa nhài và nhiều loại trà thảo mộc để mỗi tách trà đều là một trải nghiệm đáng nhớ.</p>
+        <a class="btn btn-outline" href="#contact">Tìm hiểu thêm</a>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="products-intro"><p class="script">Check out</p><h2>Our products</h2>
+        <p>Bộ sưu tập trà được tuyển chọn kỹ lưỡng, từ vị đậm cổ điển đến hương hoa dịu nhẹ.</p>
+        <a class="btn btn-outline" href="#contact">Xem thực đơn</a>
+      </div>
+      <div class="product-list">
+        <article class="product-card"><a class="glightbox" href="images/slide2.svg" data-gallery="tea" data-title="Black long tea"><img src="images/slide2.svg" alt="Tách trà đen" loading="lazy"></a><h3>Black long tea</h3><p>Trà đen đậm vị, hậu ngọt</p><strong>$3.99</strong></article>
+        <article class="product-card"><a class="glightbox" href="images/slide1.svg" data-gallery="tea" data-title="Green tea with jasmine"><img src="images/slide1.svg" alt="Trà xanh hoa nhài" loading="lazy"></a><h3>Green tea with jasmine</h3><p>Trà xanh ướp hoa nhài thanh mát</p><strong>$4.99</strong></article>
+        <article class="product-card"><a class="glightbox" href="images/slide3.svg" data-gallery="tea" data-title="Herbal tea"><img src="images/slide3.svg" alt="Trà thảo mộc" loading="lazy"></a><h3>Herbal tea</h3><p>Thảo mộc thơm dịu, dễ chịu</p><strong>$4.49</strong></article>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <header class="section-heading"><p class="script">Explore</p><h2>Our services</h2><p>Thêm một chút chăm sóc vào trải nghiệm thưởng trà của bạn.</p></header>
+      <div class="service-list">
+        <article class="service-card"><img src="images/slide1.svg" alt="Trà được pha chế tỉ mỉ" loading="lazy"><div><h3>Custom recipe service</h3><p>Cùng bạn tạo nên hương vị trà theo sở thích riêng.</p><a href="#contact">Tìm hiểu →</a></div></article>
+        <article class="service-card"><img src="images/slide2.svg" alt="Giao trà đến tận nhà" loading="lazy"><div><h3>Home delivery service</h3><p>Giao trà tươi ngon đến tận nhà, tiện lợi mỗi ngày.</p><a href="#contact">Tìm hiểu →</a></div></article>
+        <article class="service-card"><img src="images/slide3.svg" alt="Tuyển chọn và ủ trà" loading="lazy"><div><h3>Tea aging service</h3><p>Tư vấn bảo quản để trà luôn giữ trọn hương vị.</p><a href="#contact">Tìm hiểu →</a></div></article>
+      </div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div class="contact-info"><p class="script">Visit us</p><h2>Contact</h2>
+        <div><h3>Address</h3><p>523 N Fairfax Ave<br>Los Angeles, CA 90048</p></div>
+        <div><h3>Email</h3><a href="mailto:hello@teastation.example">hello@teastation.example</a></div>
+        <div><h3>Telephone</h3><a href="tel:+123456789">+1 234 567 89</a></div>
+      </div>
+      <form class="contact-form">
+        <h2>Contact us</h2>
+        <label for="name">Họ và tên</label><input id="name" name="name" autocomplete="name" placeholder="Tên của bạn" required>
+        <label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="email@example.com" required>
+        <label for="message">Lời nhắn</label><textarea id="message" name="message" rows="5" placeholder="Bạn cần chúng tôi giúp gì?" required></textarea>
+        <button class="btn" type="submit">Gửi lời nhắn</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home">☕ <span>Tea Station</span></a><p>© 2026 Tea Station · Made for learning purposes</p><a href="#home">Lên đầu trang ↑</a></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

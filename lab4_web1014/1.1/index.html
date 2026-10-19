@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab 7.1 - Specially Crafted Tea (CSS Grid)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Over+the+Rainbow&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="menu-btn" aria-label="Menu">&#9776;</button>
+
+<!-- SECTION 1: HERO -->
+<header class="hero">
+  <p class="hero__tag">Over one hundred flavors of tea</p>
+  <h1 class="hero__title">Specially Crafted Tea</h1>
+  <a href="#about" class="btn hero__btn">Explore</a>
+</header>
+
+<!-- SECTION 2: 4 FEATURES (CSS Grid 4 cột) -->
+<section class="features">
+  <article class="feature">
+    <h3>Made with love</h3>
+    <p>Our tea is made with love, from the collection of the leaves to the brewing.</p>
+  </article>
+  <article class="feature">
+    <h3>Relaxation</h3>
+    <p>Set aside anxiety and relax after a hard day with a cup of hot tea in your hands.</p>
+  </article>
+  <article class="feature">
+    <h3>Energy</h3>
+    <p>Our tea will energize you with vitamins and invigorate the rest of the day.</p>
+  </article>
+  <article class="feature">
+    <h3>Family recipe</h3>
+    <p>All our recipes are passed down from generation to generation for a long time.</p>
+  </article>
+</section>
+
+<!-- SECTION 3: ABOUT (CSS Grid 2 cột) -->
+<section class="about" id="about">
+  <div class="about__media">
+    <img src="images/about.svg" alt="Bộ ấm trà và tách trà đen">
+  </div>
+  <div class="about__text">
+    <h2><span>About Our</span>Tea Station</h2>
+    <p>Once upon a time we only had a couple of teapots and enjoyed tea only with our family. Over time, we were able to afford to buy a small tea plantation</p>
+    <p>Now we have a whole teahouse and we delight many people with delicious and hot tea. We serve black long tea, relaxing green and jasmine tea, tea with spices and many others.</p>
+    <a href="#" class="btn">Learn more</a>
+  </div>
+</section>
+</body>
+</html>
