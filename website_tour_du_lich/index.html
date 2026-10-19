@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá tour du lịch trong nước và quốc tế cùng VietTrip.">
+  <title>VietTrip - Khám phá thế giới cùng bạn</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html"><span class="logo-mark">✈</span> Viet<span>Trip</span></a>
+    <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <a class="active" href="index.html">Trang chủ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="tours.html">Tours</a>
+      <a href="services.html">Dịch vụ</a>
+      <a href="guide.html">Cẩm nang</a>
+      <a href="contact.html">Liên hệ</a>
+      <a class="nav-login" href="account.html">Tài khoản</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-shade"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">ĐI ĐỂ TRẢI NGHIỆM · ĐI ĐỂ TRƯỞNG THÀNH</p>
+      <h1>Thế giới rộng lớn,<br><span>hãy bắt đầu hành trình.</span></h1>
+      <p class="hero-copy">Khám phá những điểm đến tuyệt đẹp và tạo nên kỷ niệm đáng nhớ cùng VietTrip.</p>
+      <a class="btn btn-orange" href="tours.html">Khám phá tour <span>→</span></a>
+    </div>
+  </section>
+
+  <section class="search-section">
+    <div class="container">
+      <form class="search-box" id="home-search">
+        <label>Điểm đến
+          <select id="destination">
+            <option value="">Bạn muốn đi đâu?</option>
+            <option>Đà Nẵng</option><option>Phú Quốc</option><option>Đà Lạt</option>
+            <option>Nhật Bản</option><option>Hàn Quốc</option><option>Thái Lan</option>
+          </select>
+        </label>
+        <label>Ngày khởi hành <input id="departure" type="date"></label>
+        <label>Số người
+          <select id="people"><option>1 người</option><option selected>2 người</option><option>3 người</option><option>4 người</option><option>5+ người</option></select>
+        </label>
+        <button class="btn btn-primary" type="submit">Tìm tour</button>
+      </form>
+      <p class="form-note" id="search-message" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div><p class="eyebrow blue">ĐIỂM ĐẾN ĐƯỢC YÊU THÍCH</p><h2>Tour nổi bật</h2><p>Những hành trình được nhiều du khách lựa chọn.</p></div>
+        <a class="text-link" href="tours.html">Xem tất cả tour →</a>
+      </div>
+      <div class="tour-grid">
+        <article class="tour-card">
+          <a href="tour-detail.html"><img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=900&q=85" alt="Cầu Vàng tại Đà Nẵng"></a>
+          <div class="tour-card-body"><span class="tag">Trong nước</span><h3><a href="tour-detail.html">Đà Nẵng – Hội An</a></h3><p class="muted">◷ 4 ngày 3 đêm &nbsp; · &nbsp; Khởi hành hằng tuần</p><div class="tour-card-bottom"><div><small>Giá từ</small><strong>5.490.000đ</strong></div><a class="round-arrow" href="tour-detail.html" aria-label="Xem tour Đà Nẵng">↗</a></div></div>
+        </article>
+        <article class="tour-card">
+          <a href="tour-detail.html"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Biển nhiệt đới Bali"></a>
+          <div class="tour-card-body"><span class="tag">Nghỉ dưỡng</span><h3><a href="tour-detail.html">Thiên đường Phú Quốc</a></h3><p class="muted">◷ 3 ngày 2 đêm &nbsp; · &nbsp; Bay thẳng</p><div class="tour-card-bottom"><div><small>Giá từ</small><strong>3.990.000đ</strong></div><a class="round-arrow" href="tour-detail.html" aria-label="Xem tour Phú Quốc">↗</a></div></div>
+        </article>
+        <article class="tour-card">
+          <a href="tour-detail.html"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85" alt="Phố cổ Nhật Bản"></a>
+          <div class="tour-card-body"><span class="tag">Quốc tế</span><h3><a href="tour-detail.html">Khám phá Nhật Bản</a></h3><p class="muted">◷ 6 ngày 5 đêm &nbsp; · &nbsp; Tokyo – Osaka</p><div class="tour-card-bottom"><div><small>Giá từ</small><strong>19.990.000đ</strong></div><a class="round-arrow" href="tour-detail.html" aria-label="Xem tour Nhật Bản">↗</a></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo-band">
+    <div class="container promo-inner"><div><p class="eyebrow">ƯU ĐÃI MÙA DU LỊCH</p><h2>Đi cùng nhau, vui hơn – tiết kiệm hơn!</h2><p>Ưu đãi nhóm bạn và gia đình cho một số tour được chọn.</p></div><a href="tours.html" class="btn btn-light">Xem ưu đãi</a></div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading"><div><p class="eyebrow blue">VÌ SAO CHỌN VIETTRIP?</p><h2>Đồng hành trên mọi hành trình</h2></div></div>
+      <div class="feature-grid">
+        <article class="feature"><div class="feature-icon">✓</div><h3>Lịch trình rõ ràng</h3><p>Thông tin tour, thời gian và dịch vụ được trình bày dễ hiểu.</p></article>
+        <article class="feature"><div class="feature-icon">♡</div><h3>Tư vấn tận tâm</h3><p>Hỗ trợ khách hàng lựa chọn hành trình phù hợp nhu cầu.</p></article>
+        <article class="feature"><div class="feature-icon">⌂</div><h3>Trải nghiệm đáng nhớ</h3><p>Gợi ý điểm đến, ẩm thực và hoạt động thú vị tại địa phương.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a class="logo footer-logo" href="index.html">✈ Viet<span>Trip</span></a><p>Khám phá thế giới theo cách của bạn.</p></div>
+    <div><h3>Khám phá</h3><a href="tours.html">Tour du lịch</a><a href="services.html">Dịch vụ</a><a href="guide.html">Cẩm nang</a></div>
+    <div><h3>Liên hệ</h3><p>Hà Nội, Việt Nam</p><p>Hotline: 1900 0000</p><p>Email: contact@viettrip.vn</p></div>
+    <div><h3>Theo dõi chúng tôi</h3><p>Facebook · Instagram · Zalo</p><p class="muted">Thông tin liên hệ là dữ liệu minh họa.</p></div>
+  </div>
+  <div class="footer-bottom"><div class="container">© 2026 VietTrip. Website bài tập học phần Thiết kế Web.</div></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
